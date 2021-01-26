@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/xsl_mybatis?serverTimezone=UTC
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.mybatis.entity
+
+server:
+  port: 8088
+logging:
+  level:
+    com:
+      mybatis:
+        mapper: debug
